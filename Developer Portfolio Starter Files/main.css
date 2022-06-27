@@ -7,7 +7,7 @@ body{
 
 ul{
     list-style-type: none;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     display: flex;
     margin: 0;
@@ -19,11 +19,6 @@ ul{
 
 li{
     display: inline-block;
-    justify-content: space-between;
-}
-
-.nav-li{
-    
 }
 
 a{
@@ -34,17 +29,10 @@ a{
     text-decoration: none;
 }
 
-.button-li{
-    display: flex;
-    justify-content: right;
-}
-
 li button{
     background-color: rgb(199, 176, 0);
     border: none;
     padding: 10px;
-    /* padding-left: 15px;
-    padding-right: 15px; */
     width: 115px;
 }
 
@@ -54,10 +42,6 @@ a:hover{
 
 .name-div{
     color: rgb(198, 198, 198);
-}
-
-.name-li{
-    float: left;
 }
 
 h1 {
@@ -71,7 +55,8 @@ p{
 }
 
 img{
-    margin: 10px;
+    width: auto;
+    height: auto;
 }
 
 .logo-li{
