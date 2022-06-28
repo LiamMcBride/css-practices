@@ -129,11 +129,17 @@ ul{
 
 .main-content-div{
     /* margin: 36px 154px; */
-    width: 100%;
-    margin-top: 36px;
-    margin-bottom: 36px;
+    padding: 0;
+    margin: 0;
+    padding-top: 36px;
+    padding-bottom: 36px;
     margin-left: 154px;
     margin-right: 124px;
+}
+
+.forcast-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .forcast-day-div{
@@ -141,9 +147,10 @@ ul{
     height: 141px;
     padding: 18px 22px;
     background-color: rgb(30,33,58);
+    text-align: center;
 }
 
-.forcast-day-title, .forcast-day-high-temp-div, h1{
+.forcast-day-title, .forcast-day-high-temp-div, .info-data-div, h1{
     color: rgba(231, 231, 235, 1);
 }
 
@@ -177,4 +184,22 @@ ul{
     flex: right;
     margin-left: 8px;
     color: rgba(160, 159, 177, 1);
+}
+
+.info-div{
+    display: grid;
+    /* grid-template-columns: 328px 328px;
+    grid-gap: 48px; */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 48px;
+}
+
+.specific-info-div{
+    padding: 18px 22px;
+    background-color: rgb(30,33,58);
+    text-align: center;
+}
+
+.info-data-div{
+    font-size: 50px;
 }
