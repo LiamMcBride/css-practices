@@ -1,0 +1,88 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.content-div{
+    padding: 40px 10%;
+    margin 0;
+}
+
+ul{
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100;
+}
+
+button{
+    border: none;
+    padding: 15px;
+    background: none;
+}
+
+h1{
+    font-size: 59px;
+    margin: 20px 0px;
+}
+
+h2{
+    font-size: 40px;
+    margin: 20px 0px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.color-div{
+    background-image: url("Assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.get-started-button{
+    background-color: black;
+    border-radius: 5px;
+}
+
+.button-content-white{
+    float: left;
+    color: white;
+    margin-right: 3px;    
+}
+
+.button-content-normal{
+    float: right;
+    color: gray;
+}
+
+.intro-div{
+    justify-content: center;
+    text-align: center;
+    padding: 40px 27%;
+}
+
+.info-div{
+    width: 50%;
+    float: left;
+}
+
+.image-div{
+    width: 40%;
+    float: right;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
