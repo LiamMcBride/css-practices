@@ -30,6 +30,7 @@ a{
 
 button{
     background-color: rgb(199, 176, 0);
+    /* rgb(0, 254, 127) */
     border: none;
     padding: 10px;
     width: 115px;
