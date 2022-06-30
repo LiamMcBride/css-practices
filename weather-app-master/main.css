@@ -55,6 +55,7 @@ button{
 
 .weather-image{
     margin: auto;
+    width: 60%;
 }
 
 .temp-div{
