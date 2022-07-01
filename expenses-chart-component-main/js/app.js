@@ -5,10 +5,12 @@ function calculateHeight(amount){
 function sizeGraph(data){
     let graphs = document.getElementsByClassName("graph-bar");
     let titles = document.getElementsByClassName("graph-label");
+    let values = document.getElementsByClassName("graph-amount");
     let counter = 0;
     for(const day in data){
         graphs[counter].style.height = calculateHeight(data[day]["amount"]) + "px";
         titles[counter].innerHTML = data[day]["day"]
+        values[counter].innerHTML = "$" + data[day]["amount"];
         counter++;
     }
 }

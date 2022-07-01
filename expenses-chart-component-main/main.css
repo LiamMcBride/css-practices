@@ -16,6 +16,11 @@ hr{
     background-color: gray;
 }
 
+.bar-graph{
+    width: 100%;
+    height: 100%;
+}
+
 .brown-text{
     color: rgb(181,176,170);
 }
@@ -27,8 +32,8 @@ hr{
 
 .card{
     border-radius: 15px;
-    width: 45%;
-    padding: 20px;
+    width: 30%;
+    padding: 30px;
     clear: both;
     margin: 10px auto;
 }
@@ -123,9 +128,12 @@ hr{
 .day-container{
     /* margin: 10px; */
     height: 200px;
-    position: relative;
     justify-items: center;
     text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
 }
 
 .graph-bar{
@@ -133,14 +141,16 @@ hr{
     height: 40px;
     width: 80%;
     background-color: rgb(236,117,93);
-    position: absolute;
-    left: 10%;
-    bottom: 20px;
     border-radius: 7px;
+    margin: 5px 0;
 }
 
-.graph-bar:hover{
+.day-container:hover .graph-bar{
     background-color: rgb(118,181,188);
+}
+
+.day-container:hover .graph-amount{
+    display: block;
 }
 
 .graph-amount{
@@ -150,9 +160,8 @@ hr{
     width: 100%;
     height: auto;
     padding: 5px 0px;
-    position: absolute;
-    left: 0px;
     border-radius: 7px;
+    display: none;
 }
 
 /* .graph-bar-value{
@@ -167,7 +176,5 @@ hr{
 .graph-label{
     text-align: center;
     width: 100%;
-    position: absolute;
-    bottom: 0px;
 }
 
