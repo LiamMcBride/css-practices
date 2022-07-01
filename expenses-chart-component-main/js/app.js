@@ -15,6 +15,31 @@ function sizeGraph(data){
     }
 }
 
+function generateGraph(size){
+  let graph = document.getElementsByClassName("graph-container")[0];
+  let base = "1fr ".repeat(size);
+  
+  graph.style.gridTemplateColumns = base;
+  for(let i = 0; i < size; i++){
+    let newDay = document.createElement("div");
+    let newGraphAmount = document.createElement("div");
+    let newGraphBar = document.createElement("div");
+    let newGraphTitle = document.createElement("div");
+    
+    newDay.className = ("day-container");
+    newGraphAmount.className = ("graph-amount");
+    newGraphBar.className = ("graph-bar");
+    newGraphTitle.className = ("graph-label sub-heading brown-text");
+
+    newDay.appendChild(newGraphAmount);
+    newDay.appendChild(newGraphBar);
+    newDay.appendChild(newGraphTitle);
+
+    graph.appendChild(newDay);
+    
+  }
+}
+
 let data = [
     {
       "day": "mon",
@@ -46,4 +71,5 @@ let data = [
     }
   ];
 
+generateGraph(Object.keys(data).length);
 sizeGraph(data);
