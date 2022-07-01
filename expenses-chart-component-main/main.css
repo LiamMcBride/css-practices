@@ -27,7 +27,7 @@ hr{
 
 .card{
     border-radius: 15px;
-    width: 30%;
+    width: 45%;
     padding: 20px;
     clear: both;
     margin: 10px auto;
@@ -121,7 +121,7 @@ hr{
 }
 
 .day-container{
-    margin: 10px;
+    /* margin: 10px; */
     height: 200px;
     position: relative;
     justify-items: center;
@@ -131,10 +131,27 @@ hr{
 .graph-bar{
     /* height: 175px; */
     height: 40px;
-    width: 100%;
+    width: 80%;
     background-color: rgb(236,117,93);
     position: absolute;
+    left: 10%;
     bottom: 20px;
+    border-radius: 7px;
+}
+
+.graph-bar:hover{
+    background-color: rgb(118,181,188);
+}
+
+.graph-amount{
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    padding: 5px 0px;
+    position: absolute;
+    left: 0px;
     border-radius: 7px;
 }
 

@@ -7,14 +7,13 @@ function sizeGraph(data){
     let titles = document.getElementsByClassName("graph-label");
     let counter = 0;
     for(const day in data){
-        console.log(data[day])
         graphs[counter].style.height = calculateHeight(data[day]["amount"]) + "px";
         titles[counter].innerHTML = data[day]["day"]
         counter++;
     }
 }
 
-data = [
+let data = [
     {
       "day": "mon",
       "amount": 17.45
