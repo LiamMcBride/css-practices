@@ -141,7 +141,7 @@ hr{
 }
 
 .day-container:hover .graph-bar{
-    background-color: rgb(118,181,188);
+    background-color: rgb(235, 26, 200);
 }
 
 .day-container:hover .graph-amount{
